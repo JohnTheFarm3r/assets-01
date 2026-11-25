@@ -1,7 +1,7 @@
 r01.bin and r02.bin
 SAM 2.1 Hiera Small. Copyright Meta Platforms, Inc. and affiliates.
 Source: https://github.com/facebookresearch/sam2
-ONNX distribution: https://github.com/darktable-org/darktable-ai/releases/tag/release-5.6.0
+Checkpoint: sam2.1_hiera_small.pt, exported to ONNX from the official repository.
 
 r03.bin
 SAM 2.1 Hiera Large. Copyright Meta Platforms, Inc. and affiliates.
@@ -13,7 +13,10 @@ HQ-SAM 2.1 Hiera Large decoder. SysCV/sam-hq contributors.
 Source: https://github.com/SysCV/sam-hq/tree/main/sam-hq2
 ONNX export: https://huggingface.co/latolukasz/sam2.1-hq-hiera-large-onnx/tree/5d5e61bc0f0b61247e2cf9839872d2920a000727
 
+r01.bin and r02.bin are published in release v2; r03.bin and r04.bin in release v1.
+
 License: Apache License 2.0. See LICENSE.
-Modifications by EkinStrop: converted to MNN 3.6.1 with FP16 weights;
-the r03.bin graph was simplified with ONNX Simplifier before conversion.
+Modifications by EkinStrop: r01.bin and r02.bin exported to ONNX from the official
+checkpoint; all files converted to MNN 3.6.1 with FP16 weights;
+the r01.bin and r03.bin graphs were simplified with ONNX Simplifier before conversion.
 The r01.bin, r02.bin, r03.bin and r04.bin files are modified binary distributions.
